@@ -65,3 +65,217 @@ transition:.3s;
 nav ul li a:hover{
 color:#ff4fa3;
 }
+/* ===== HERO SECTION ===== */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding-top:100px;
+background:linear-gradient(135deg,#141824,#1d2235);
+}
+
+.hero-content{
+max-width:700px;
+margin:auto;
+}
+
+.hero h1{
+font-size:55px;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.8;
+opacity:.85;
+margin-bottom:30px;
+}
+
+.hero-btn{
+display:inline-block;
+padding:16px 42px;
+background:#ff4fa3;
+color:#fff;
+text-decoration:none;
+border-radius:50px;
+font-size:18px;
+font-weight:bold;
+transition:.3s;
+}
+
+.hero-btn:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 40px rgba(255,79,163,.35);
+}
+
+/* ===== HERO IMAGE ===== */
+
+.hero-image{
+margin-top:50px;
+}
+
+.hero-image img{
+width:100%;
+max-width:420px;
+border-radius:20px;
+box-shadow:0 20px 50px rgba(0,0,0,.35);
+}/* ===== ABOUT ===== */
+
+.about{
+padding:100px 20px;
+text-align:center;
+background:#171b27;
+}
+
+.about h2{
+font-size:40px;
+margin-bottom:20px;
+color:#ff4fa3;
+}
+
+.about p{
+max-width:750px;
+margin:auto;
+line-height:1.8;
+opacity:.85;
+}
+
+/* ===== FEATURES ===== */
+
+.features{
+padding:100px 20px;
+background:#0f1117;
+}
+
+.features h2{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#ff4fa3;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1b2132;
+padding:30px;
+border-radius:20px;
+text-align:center;
+transition:.3s;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 40px rgba(255,79,163,.2);
+}
+
+.card img{
+width:80px;
+margin-bottom:20px;
+}
+
+.card h3{
+margin-bottom:15px;
+color:#ff4fa3;
+}
+
+.card p{
+opacity:.85;
+line-height:1.7;
+}
+
+/* ===== FAQ ===== */
+
+.faq{
+padding:100px 20px;
+background:#171b27;
+}
+
+.faq h2{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#ff4fa3;
+}
+
+.faq-item{
+background:#1b2132;
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.faq-item h3{
+margin-bottom:10px;
+}
+
+/* ===== CONTACT ===== */
+
+.contact{
+padding:100px 20px;
+text-align:center;
+background:#0f1117;
+}
+
+.contact h2{
+font-size:40px;
+margin-bottom:20px;
+color:#ff4fa3;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+padding:30px;
+text-align:center;
+background:#090b10;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+footer p{
+opacity:.7;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-direction:column;
+text-align:center;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.about h2,
+.features h2,
+.faq h2,
+.contact h2{
+font-size:30px;
+}
+
+}
