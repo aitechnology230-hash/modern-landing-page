@@ -302,3 +302,78 @@ font-size:30px;
     flex-direction: column;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  flex-wrap: wrap;
+}
+
+.hero, .about, .features, .faq, .contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 5%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text, .about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-image img, .about-image img, .faq-image img, .contact-image img {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+}
+
+/* মোবাইলের জন্য */
+@media (max-width: 768px) {
+  .hero, .about, .faq, .contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
