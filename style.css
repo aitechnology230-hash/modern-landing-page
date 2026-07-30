@@ -279,3 +279,26 @@ font-size:30px;
 }
 
 }
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero, .about, .faq, .contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .hero-image img, .about-image img, .faq-image img, .contact-image img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
